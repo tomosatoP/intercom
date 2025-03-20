@@ -1,0 +1,93 @@
+#:kivy 2.3.0
+#:set default_font_size sp(50)
+
+# 「閉じる」ボタンの為のタイトルバー部品
+<TitleBar@BoxLayout>
+    title: title
+    button: button
+
+    orientation: "horizontal"
+    canvas.before:
+        Color:
+            rgba: 0.2, 0.2, 0.2, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    Label:
+        id: title
+        size_hint_x: 8
+        font_size: default_font_size * 0.5
+        text: "インターホン"
+
+    Button:
+        id: button
+        size_hint_x: 2
+        font_size: default_font_size * 0.5
+        text: "閉じる"
+        on_press: app.stop()
+
+# 音量調整用の部品
+<VolumeControl@BoxLayout>
+    device: device
+    slider: slider
+    
+    orientation: "vertical"
+
+    Label:
+        id: device
+        size_hint_y: 1
+        font_size: default_font_size * 0.5
+        text: "＊＊＊＊"
+
+    Slider:
+        id: slider
+        size_hint_y: 7
+        orientation: "vertical"
+        value_track: True
+        value_tarck_color: 0, 1, 0, 1
+        min: 0
+        max: 65536
+        step: 655
+        value: 0
+
+    Label:
+        size_hint_y: 1
+        font_size: default_font_size * 0.5
+        text: "音量"
+
+# メインのビュー
+<MainBoxLayout>
+    calltogglebutton: calltogglebutton
+    titlebar: titlebar
+    micvolume: micvolume
+    speakervolume: speakervolume
+
+
+    orientation: "vertical"
+    size: root.size
+
+    TitleBar:
+        id: titlebar
+        size_hint_y: 1
+
+    BoxLayout:
+        orientation: "horizontal"
+        size_hint_y: 3
+
+        VolumeControl:
+            id: micvolume
+            size_hint_x: 1
+
+        ToggleButton:
+            id: calltogglebutton
+            size_hint_x: 3
+            font_size: default_font_size * 2.0
+            state: "normal"
+            text: "(( ◎ ))"
+            #on_state: root.on_press_calltogglebutton(self.state)
+            on_press: root.on_press_calltogglebutton(self.state)
+
+        VolumeControl:
+            id: speakervolume
+            size_hint_x: 1
