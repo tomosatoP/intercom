@@ -1,0 +1,9 @@
+[tool.mypy]
+
+[tool.black]
+
+[tool.isort]
+
+[tools.flake8]
+extend-ignore = ["E203", "W503", "W504"]
+max-line-length = 88

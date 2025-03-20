@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=インターホン
+GenericName=Intercom
+Path=/home/sip/intercom
+Exec=/home/sip/intercom/intercom.sh
+Comment=インターホン
+Terminal=false
+Icon=intercom
+Type=Application
+Categories=Audio;AudioVideo
