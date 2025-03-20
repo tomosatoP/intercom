@@ -28,6 +28,8 @@
 > 他に開発環境として、[Raspberry Pi connect (Beta)](https://www.raspberrypi.com/software/connect/)とVSCodeを使用
 
 ## 使い方
+![画面](image/widnow.png)
+![アプリ画面](image/screenshot.png)
 
 |項目|操作|
 |---|---|
