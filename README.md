@@ -29,7 +29,8 @@
 
 ## 使い方
 ![画面](image/widnow.png)
-![アプリ画面](image/screenshot.png)
+![アプリ画面待ち](image/screenshot.png)
+![アプリ画面会話中](image/calling.png)
 
 |項目|操作|
 |---|---|
