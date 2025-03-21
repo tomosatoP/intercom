@@ -60,7 +60,8 @@ make
 
 venv仮想環境の構築と、[Kivy](https://kivy.org/)モジュールの導入も合わせて行う。
 ~~~sh
-mkdir intercom
+# 本アプリをダウンロードしたフォルダに移動
+# mkdir intercom
 cd intercom
 
 python3 -m venv venv --upgrade-deps
