@@ -20,6 +20,7 @@ Config.set("graphics", "fullscreen", "auto")
 Config.set("graphics", "show_cursor", 0)  # 0, 1
 Config.set("kivy", "log_dir", log_dir)
 Config.set("kivy", "log_level", "info")
+Config.set("kivy", "log_maxfiles", 10)
 Config.set("kivy", "keyboard_mode", "dock")
 
 # Kivy: Using Official RPi touch display
