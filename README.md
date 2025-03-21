@@ -54,7 +54,7 @@
 |Wi-Fi|有効|有効|
 |IPアドレス|(固定)|(固定)|
 |ホスト名|intercom1|intercom2|
-|ユーザー名|sip|sip|
+|ユーザー名|voice|voice|
 |パスワード|********|********|
 |SIPサーバー|[Asterisk version22.2.0](https://www.asterisk.org/)|-|
 |SIPライブラリィ|[pjsip version2.15.1](https://www.pjsip.org/)|[pjsip version2.15.1](https://www.pjsip.org/)|
