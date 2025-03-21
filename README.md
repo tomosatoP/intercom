@@ -29,6 +29,7 @@
 
 ## 使い方
 ![画面](image/window.png)
+
 ![アプリ画面待ち](image/screenshot.png)
 ![アプリ画面会話中](image/calling.png)
 
