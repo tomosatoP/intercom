@@ -619,8 +619,8 @@ class VolumePulseaudio(BasePulseaudio):
     sink あるいは source の音量コントロールクラス
 
     property
-    device_name(取得のみ): デバイスの名前
-    device_type(取得のみ): デバイスのタイプ ["SINK", "SOURCE"]
+    facility_name(取得のみ): Facilityの名前
+    facility_type(取得のみ): Facilityのタイプ ["SINK", "SOURCE"]
     value: 音量値
     """
 
