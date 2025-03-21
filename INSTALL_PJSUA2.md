@@ -30,7 +30,7 @@ tar xvf 2.15.1.tar.gz
 sudo apt update
 sudo apt full-upgrade
 
-sudo apt install swig fonts-ipaexfont
+sudo apt install swig libasound2-dev fonts-ipaexfont
 # python3-dev, python3-setuptools, python3-venv,はインストール済みのはず
 ~~~
 
