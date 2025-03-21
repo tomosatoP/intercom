@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=インターホン
 GenericName=Intercom
-Path=/home/sip/intercom
-Exec=/home/sip/intercom/intercom.sh
+Path=/home/voice/intercom
+Exec=/home/voice/intercom/intercom.sh
 Comment=インターホン
 Terminal=false
 Icon=intercom
