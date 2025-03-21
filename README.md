@@ -28,7 +28,7 @@
 > 他に開発環境として、[Raspberry Pi connect (Beta)](https://www.raspberrypi.com/software/connect/)とVSCodeを使用
 
 ## 使い方
-![画面](image/widnow.png)
+![画面](image/window.png)
 ![アプリ画面待ち](image/screenshot.png)
 ![アプリ画面会話中](image/calling.png)
 
