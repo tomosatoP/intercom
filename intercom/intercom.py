@@ -207,27 +207,10 @@ class MainBoxLayout(BoxLayout):
         :param float dt: 呼び出しの秒間隔
         """
 
-        self.user_agent.buddy.updatePresence()
-
-        values = []
-        values.append(self.user_agent.account.getInfo().regIsActive)
-        values.append(self.user_agent.buddy.getInfo().presStatus.status)
-        match values:
-            case [True, pj.PJSUA_BUDDY_STATUS_ONLINE]:
-                self.titlebar.title.text = "インターホン: OK"
-            case [True, pj.PJSUA_BUDDY_STATUS_OFFLINE]:
-                self.titlebar.title.text = "インターホン: True, OFFLINE"
-            case [True, pj.PJSUA_BUDDY_STATUS_UNKNOWN]:
-                self.titlebar.title.text = "インターホン: True, UNKNOWN"
-            case [False, pj.PJSUA_BUDDY_STATUS_ONLINE]:
-                self.titlebar.title.text = "インターホン: False, ONLINE"
-            case [False, pj.PJSUA_BUDDY_STATUS_OFFLINE]:
-                self.titlebar.title.text = "インターホン: False, OFFLINE"
-            case [False, pj.PJSUA_BUDDY_STATUS_UNKNOWN]:
-                self.titlebar.title.text = "インターホン: False, UNKNOWN"
-            case _:
-                self.titlebar.title.text = "インターホン: NO"
-
+        if self.user_agent.account.getInfo().regIsActive:
+            self.titlebar.title.text = "インターホン: OK"
+        else:
+            self.titlebar.title.text = "インターホン: NO"
 
 class IntercomApp(App):
     def build(self):
