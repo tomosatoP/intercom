@@ -169,17 +169,10 @@ class UserAgent:
         try:
             config = pj.BuddyConfig()
             config.uri = idUri
-            config.subscribe = True
 
             # Buddyをサブクラス化するのが推奨されている
             self.buddy = pj.Buddy()
             self.buddy.create(self.account, config)
-
-            # buddyのpresence状態変化を購読するかどうかを決める
-            self.buddy.subscribePresence(True)
-            ### presence状態に変化があるとonBuddyStateコールバック関数が呼ばれる
-            ### updatePresence関数で直ちにpresence状態を更新する
-            ### buddyのpresence状態は、BuddyInfo.presStatus.statusに保持される
 
         except pj.Error as message:
             pass
