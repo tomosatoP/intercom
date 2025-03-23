@@ -40,7 +40,7 @@
 |切断|会話中に通話ボタンを押すと切断する。|
 
 > マイクとスピーカーの音量調整もできる。
-> [サービス化](config/service/README.mv)
+> [サービス化](config/service/README.md)
 
 ---
 
