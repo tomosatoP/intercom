@@ -5,7 +5,7 @@
 [ユニットファイル](intercom.service)
  
 ~~~sh
-cp intercom.service ~/.config/systemd/user/
+cp config/service/intercom.service ~/.config/systemd/user/
 
 # systemdへ登録
 systemctl --user enable intercom
