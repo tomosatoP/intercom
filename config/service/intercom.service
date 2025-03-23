@@ -4,6 +4,7 @@ Documentation = https://github.com/tomosatoP/intercom
 
 [Service]
 Type = simple
+EnvironmentFile = /home/voice/intercom/config/service/env.conf
 WorkingDirectory = /home/voice/intercom
 ExecStart = /bin/bash /home/voice/intercom/intercom.sh
 Restart = always
