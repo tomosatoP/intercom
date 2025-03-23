@@ -7,7 +7,7 @@ Type = simple
 EnvironmentFile = /home/voice/intercom/config/service/env.conf
 WorkingDirectory = /home/voice/intercom
 ExecStart = /bin/bash /home/voice/intercom/intercom.sh
-Restart = always
+Restart = on-failure
 
 [Install]
 WantedBy = default.target
