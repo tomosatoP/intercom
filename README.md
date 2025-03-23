@@ -75,7 +75,7 @@ git clone --depth 1 https://github.com/tomosatoP/intercom.git
 
 次に[設定ファイル](config/README.md)を編集すること。
 
-さらにに次のファイルを再配置する。
+さらに次のファイルを再配置する。
 |filename|コピー先フォルダ|補足|
 |---|---|---|
 |intercom.png|~/.icons|$ mkdir ~/.icons|
