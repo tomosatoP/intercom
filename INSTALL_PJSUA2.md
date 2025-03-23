@@ -80,7 +80,7 @@ cd intercom
 . venv/bin/activate
 
 # アカウント情報などの入力待ちになるよ
-python libs/pjsip/demo.py
+python intercom/libs/pjsip/demo.py
 
 # このテストはSSH経由では動作しない。かならずデスクトップで行うこと。
 python venv/share/kivy-examples/demo/showcase/main.py
