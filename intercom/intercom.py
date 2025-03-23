@@ -200,9 +200,7 @@ class MainBoxLayout(BoxLayout):
     def notify_callabled(self, dt):
         """callback: 通話可能かどうかをビューに反映
 
-        True & ONLINE時に通話可能とする。
-        * アカウントが登録されている True/False
-        * バディがオンライン ONLINE/OFFLINE/UNKNOWN
+        * アカウントが登録されている OK/NO
 
         :param float dt: 呼び出しの秒間隔
         """
