@@ -1,0 +1,12 @@
+[Unit]
+Description = autostart intercom
+Documentation = https://github.com/tomosatoP/intercom
+
+[Service]
+Type = simple
+WorkingDirectory = /home/voice/intercom
+ExecStart = /bin/bash /home/voice/intercom/intercom.sh
+Restart = always
+
+[Install]
+WantedBy = default.target
