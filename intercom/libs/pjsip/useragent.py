@@ -74,9 +74,9 @@ class UserAgent:
 
             self.endpoint.libInit(endpoint_config)
 
-            # UDP ポートのみを有効化
             transport_config = pj.TransportConfig()
             self.endpoint.transportCreate(pj.PJSIP_TRANSPORT_UDP, transport_config)
+            self.endpoint.transportCreate(pj.PJSIP_TRANSPORT_TCP, transport_config)
 
             self.endpoint.libStart()
 
