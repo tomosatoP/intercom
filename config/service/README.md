@@ -3,7 +3,7 @@
 本アプリ(intercom)をサービス化して自動起動する方法を示します。
 
 * [ユニットファイル](intercom.service)
-* [X server 用環境変数ファイル](env.conf)
+* [ディスプレイサーバー環境変数ファイル](env.conf)
  
 ~~~sh
 cp config/service/intercom.service ~/.config/systemd/user/
