@@ -1,8 +1,6 @@
 [Unit]
 Description = autostart intercom
 Documentation = https://github.com/tomosatoP/intercom
-; for intercom1
-;After = asterisk.service
 
 [Service]
 Type = simple
