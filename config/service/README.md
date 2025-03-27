@@ -16,3 +16,4 @@ systemctl --user restart intercom
 systemctl --user status intercom
 journalctl --user -u intercom
 ~~~
+> なぜか **intercom1** では、ディスプレイに表示されなかった。
